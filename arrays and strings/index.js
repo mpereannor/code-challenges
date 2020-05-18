@@ -40,3 +40,13 @@ function constructNote(magazine, note) {
         return true
     }
 }
+
+const urlify = (str) => {
+    let extended_str = '';
+    let split_str = str.split(" ")
+    for (let word of split_str){ 
+        word += '%20';
+        extended_str +=word
+    }
+    return extended_str
+}

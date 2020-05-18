@@ -152,7 +152,7 @@ print(lola(blue))
 # deletelist =['two', 'five']
 # arrMix(original, nextlist, deletelist)
 
-def palindromePermutation(str):
+# def palindromePermutation(str):
     #write a function to check if 
     #str is a permutation of a palindrome
     
@@ -175,8 +175,13 @@ def palindromePermutation(str):
     #             j -= 1
     #             if str[i] == str[j]:
                     
-            
-         
-         
-        
+def urlify(str):
+    #write a function that inserts %20 at every space  
+    extended_str = ''
+    split_str = str.split()
+    for word in split_str:
+        word +='%20'
+        extended_str +=word
+    return extended_str
+    
     
